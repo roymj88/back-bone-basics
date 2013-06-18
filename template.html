@@ -23,13 +23,14 @@
   <div id="container">Loading...</div>
   <!--Container for loading the Application views -->
 
-
+  <!--View Part(Extending Backbone.View) -->
   var AppView = Backbone.View.extend({
     // el - stands for element. Every view has a element associate in with HTML 
     // content will be rendered.
     el: '#container',
     
-    // It's the first function called when this view it's instantiated. You can add 'n' number of functions that you need to run when the view is loaded.
+    // It's the first function called when this view it's instantiated. 
+    // You can add 'n' number of functions that you need to run when the view is loaded.
     initialize: function(){
     	this.render();
     },
@@ -39,6 +40,7 @@
     render: function(){
     	this.$el.html("Hello World");
     }
-  });
+  });  
+  <!--View Part(Extending Backbone.View) -->
 
 </body>
